@@ -1,18 +1,12 @@
 body{
-  line-height: 1.7;
-  font: 15px/1.7,arial,helvita,san-serif;
-  margin: 0;
-
+    font: 15px/1.7
+    margin: 0;
+    font-family: lato,arial,helvita,san-serif;
 }
 
-.nav-bar hr {
-  width: 600px;
-}
+/* navigation */
 
-h1 {
-  font-size: 40px;
-  text-transform: uppercase;
-}
+
 .logo {
    height: 80px;
    margin-left: 50px;
@@ -23,14 +17,13 @@ h1 {
     float: right;
     list-style: none;
     margin-top: 20px;
-
+    border-bottom: 1px solid #D3D3D3;
 }
 
 .nav-bar li{
     display: inline-block;
     margin-left: 40px;
-    padding-right: 40px;
-
+  padding-right: 40px;
 }
 
 
@@ -41,33 +34,40 @@ h1 {
     text-transform: uppercase;
     font-size: 70%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
-
 }
 
 .nav-bar li a:hover,
 .nav-bar li a:active{
     border-bottom: 2px solid #e67e22;
     padding-bottom: 12px;
-
 }
 
 .hero-section{
     background-color: #D3D3D3;
+    padding: 20px;
+    display: flex;
 }
 
-.row {
-  padding: 70px;
+.heroimg{
+    width: 50%;
 }
 .hero-img {
-  height: 350px;
-  float: left;
-  margin-right: 50px;
+   
+    height: 350px;
 }
 
-.hero-text {
-   padding-top: 50px;
+.hero-text{
+    width: 40%;
+    margin-top: 50px;
+   
+    padding: 30px;
+    font-size: 10px;
 }
+
+
+/* button */
 
 
 .btn:link,
@@ -77,58 +77,182 @@ h1 {
     padding:10px 30px;
     display: inline-block;
     border-radius: 10px;
+    -webkit-transition: all .2s;
     transition: all .2s;
-
     font-size: 15px;
     color: white;
     background-color: purple;
 }
 
+/* boxes */
 
-
-#boxes {
-  margin-top: 20px;
-
+.about-box{
+  margin:20px;
+  display:flex;   
 }
 
-#boxes .box img {
-  width: 90px;
+.box{
+  padding: 10px;
+    
 }
 
-#boxes .box hr {
-  width: 270px;
-}
-#boxes .box {
-  float: left;
-  text-align: center;
-  width:25%;
+.box p{
+  text-align:justify;
+    line-height: 20px;
 }
 
-
-#plan-boxes {
-  margin-top: 20px;
-
+.box h3{
+  text-align:center;
+    font-size: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
-
-
-.plan-img{
-  width: 225px;
+.box img{
+    height: 64px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/*  plan-boxes  */
+
+.plan-boxes {
+  margin: 20px; 
+  display:flex;
+  
+  
+}
+
 
 
 .plan-box {
-  float: left;
-  width:15%;
-  padding: 20px;
+  width:25%;  
+ 
 }
 
+.plan-img{
+  width: 300px;
+}
 
+/* footer  */
 .footer{
-  background-color: red;
+  background-color:black;
+  color:#D3D3D3;
+  padding-top:20px;
+  display:block; 
+  }
+
+
+.footer-icon {
+   
+   margin: 0; 
+   
 }
 
-.footer-box{
-  float: left;
-  width: 220px;
+.fa-linkedin-in,
+.fa-twitter,
+.fa-pinterest,
+.fa-rss{
+    font-size: 10px;
+    border-radius: 100%;
+    background-color: #D3D3D3;
+    padding: 15px;
+    color: #363636;
+    
 }
+
+.fa-google-plus-g {
+    font-size: 9px;
+    border-radius: 100%;
+    background-color: #D3D3D3;
+    padding: 15px;
+
+    color: #363636;
+}
+
+.footer-icon ul{
+   
+    padding-left: 0;
+    
+}
+
+.footer-icon li{
+    text-decoration: none;
+    float: left;
+   padding-right: 18px;
+    width: 10%;
+   
+    
+    
+}
+.sub-footer-1{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.footer-box{ 
+    width: 300px;   
+}
+
+
+
+.footer-box p {
+    font-family: Work Sans,sans-serif;
+    line-height: 1.5;
+}
+
+.footer-box h3 {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.footer-box li{
+    text-align: left;
+    list-style-type: none;    
+}
+
+.greater{
+   
+    padding: 10px
+}
+
+.footer-box a {
+  text-decoration:none;
+  color:#D3D3D3;
+  letter-spacing: 2px;
+}
+
+.footer-box input[type="name" ] {
+  padding:7px;
+  width:250px;
+  height:15px;
+  border-radius:10px;   
+}
+
+.footer-box input[type="email" ] {
+  padding:7px;
+  width:250px;
+  height:15px;
+  border-radius:10px;  
+}
+
+.sub-footer-2{
+      border-top: 1px solid #ccc;
+  padding:20px;
+}
+
+.sub-footer-2 h3 {
+  font-size:15px; 
+}
+
+.sub-footer-2 p {
+  text-align:right;
+  font-size:15px;
+  margin-top:-30px;  
+}
+
+
+
